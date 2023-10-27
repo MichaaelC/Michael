@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*header*/
+
+
+/* Style the navigation bar */
+nav {
+    background-color: #333; 
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Text color */
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    transition: color 0.7s;
+    padding: 20px;
+}
+nav ul li a::before {
+    content: ''; /* Create a pseudo-element for the underline */
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: white; 
+    transform: scaleX(0); 
+    transform-origin: right;
+    transition: transform 0.7s;
+}
+nav ul li a:hover::before {
+    transform: scaleX(1); 
+    transform-origin: left;
+    background-color: white; 
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: black; /* Background color on hover */
+    color: #fff;
+}
+
+
+/* Style the "Home" section */
+
+#home{
+    display: flex;
+    height: 100vh;
+}
+
+.image-container {
+    display: flex;
+    align-items: center; /* Vertically align the image */
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.small-image {
+    max-width: 25%;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.text-content {
+    flex: 1.5; 
+    padding: 50px;
+    font-size: 32px;
+}
+.text-content p{
+    font-weight: bold;
+}
+
+/*Style for "About me" Section*/
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.headings{
+    font-size: 36px;
+    padding: 10px;  
+}
+.about-text-content p {
+    font-size: 32px;
+    margin: 10px 0;
+    padding: 20px;
+    max-width: 700px;
+}
+/*Skills section*/
+.header{
+    text-align: center;
+    font-size: 36px;
+}
+
+.text{
+    text-align: center;
+    font-size: 32px;
+}
+
+.image-grid{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    margin-left: 80px;
+}
+
+.skills-image{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.skills-image img{
+    width: 300px;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+.skills-image:hover img{
+    transform: scale(1.2);
+    position: relative;
+}
+.skills-text{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.skills-text p{
+    font-size: 30px;
+}
+
+.skills-image:hover .skills-text{
+    bottom: 0;
+    opacity: 1;
+}
