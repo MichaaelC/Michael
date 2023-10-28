@@ -27,7 +27,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px; 
+    margin: 0 60px; 
 }
 
 nav ul li a {
@@ -61,6 +61,19 @@ nav ul li a:hover::before {
 nav ul li a:hover {
     background-color: black; /* Background color on hover */
     color: #fff;
+}
+
+/*Social Media*/
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+    filter: grayscale(0%);
 }
 
 
@@ -107,6 +120,7 @@ nav ul li a:hover {
 .headings{
     font-size: 36px;
     padding: 10px;  
+    text-align: center;
 }
 .about-text-content p {
     font-size: 32px;
