@@ -69,7 +69,7 @@ nav ul li a:hover {
     height: 40px;
     margin-left: 40px;
     filter: grayscale(100%);
-    transition: filter 0.2s ease-in-out;
+    transition: filter 0.3s ease-in-out;
 }
 
 .social-icons img:hover {
