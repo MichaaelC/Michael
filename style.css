@@ -133,6 +133,7 @@ nav ul li a:hover {
     margin-left: 80px;
 }
 
+
 .skills-image{
     position: relative;
     width: 300px;
@@ -144,8 +145,8 @@ nav ul li a:hover {
 }
 
 .skills-image img{
-    width: 300px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     transition: transform 0.3s ease;
 }
 .skills-image:hover img{
