@@ -1,12 +1,14 @@
 @media (max-width: 768px){
     /*NavBar*/
     nav ul li {
-        margin: 0 7px; 
+        margin: 0 5px; 
+        z-index: 100;
     }
     
     /*Home*/
     #home {
         display: block;
+        padding-bottom: 80px;
     }
     .image-container {
         display: block; 
@@ -16,7 +18,8 @@
     .small-image {
         max-width: 50%; 
         margin: 0 auto; 
-        display: block; /
+        display: block;
+        margin-top: 70px;
     }
     .text-content {
         padding: 20px; 
@@ -29,10 +32,45 @@
     }
     /*Home end*/
 
+    /*About me*/
+    #about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 90px;/* Add padding to create space around the content */
+        
+    }
+    .headings {
+        font-size: 36px;
+        text-align: center;
+    }
+    .about-text-content {
+        max-width: 700px;
+    }
+    .about-text-content p {
+        font-size: 32px;
+        margin: 10px 0;
+    }    
+
     /*Skills*/
+    #skills{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        font-size: 28px;
+    }
     .header, .text {
         text-align: center; 
-        font-size: 24px; 
+        font-size: px; 
     }
     
     .image-grid {
@@ -59,5 +97,5 @@
     .skills-image:hover .skills-text {
         bottom: 0; 
     }
-    
+
 }
