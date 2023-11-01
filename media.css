@@ -1,0 +1,58 @@
+@media (max-width: 768px){
+    /*Home*/
+    #home {
+        display: block;
+    }
+    .image-container {
+        display: block; /* Change to a block layout for smaller screens */
+        text-align: center; /* Center the content horizontally */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    .small-image {
+        max-width: 50%; /* Make the image take up 50% of the container width */
+        margin: 0 auto; /* Center the image horizontally */
+        display: block; /* Ensure the image is centered */
+    }
+    .text-content {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center the text content horizontally */
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    .text-content p {
+        font-weight: bold;
+        color: orange;
+    }
+    /*Home end*/
+
+    /*Skills*/
+    .header, .text {
+        text-align: center; /* Center the header and text content horizontally */
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    
+    .image-grid {
+        grid-template-columns: 1fr; /* Display a single column for images */
+        justify-content: center;
+        margin: 0; /* Remove the left margin for the grid */
+    }
+    .skills-image {
+        width: 300px; /* Make the images take up the full width of the container */
+        border: 2px solid black;
+        margin: 0 auto;
+    }
+    .skills-image img {
+        width: 250px; /* Make the image take up the full width of its container */
+        height: 250px; /* Maintain the aspect ratio */
+    }
+    .skills-image:hover img {
+        transform: scale(1.2); /* Keep the hover effect to scale the image */
+    }
+    
+    .skills-text p {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+    .skills-image:hover .skills-text {
+        bottom: 0; /* Keep the text always visible on hover */
+    }
+    
+}
