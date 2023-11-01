@@ -115,6 +115,8 @@ nav ul li a:hover {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    padding: 80px;
+    background-color: #f0f0f0;
 }
 .headings{
     font-size: 36px;
@@ -137,6 +139,8 @@ nav ul li a:hover {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    font-size: 32px;
+    padding: 80px;
 }
 .header{
     text-align: center;
