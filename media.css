@@ -1,4 +1,8 @@
 @media (max-width: 768px){
+    /*NavBar*/
+    nav ul li {
+        margin: 0 7px; /* Adjust the spacing between menu items */
+    }
     /*Home*/
     #home {
         display: block;
