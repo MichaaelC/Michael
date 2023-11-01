@@ -2,8 +2,6 @@ body {
     margin: 0;
     padding: 0;
 }
-/*header*/
-
 
 /* Style the navigation bar */
 nav {
@@ -70,6 +68,7 @@ nav ul li a:hover {
     margin-left: 40px;
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
+    margin-top: 40px;
 }
 
 .social-icons img:hover {
@@ -105,6 +104,7 @@ nav ul li a:hover {
 }
 .text-content p{
     font-weight: bold;
+    color: orange;
 }
 
 /*Style for "About me" Section*/
