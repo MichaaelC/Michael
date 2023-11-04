@@ -81,13 +81,14 @@ nav ul li a:hover {
 #home{
     display: flex;
     height: 100vh;
+    color: white;
 }
 
 .image-container {
     display: flex;
     align-items: center; /* Vertically align the image */
     padding: 50px;
-    background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
 }
 .small-image {
     max-width: 25%;
@@ -100,6 +101,7 @@ nav ul li a:hover {
     flex: 1.5; 
     padding: 50px;
     font-size: 32px;
+    
 }
 .text-content p{
     font-weight: bold;
@@ -116,7 +118,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 80px;
-    background-color: #f0f0f0;
+    color: white;
 }
 .headings{
     font-size: 36px;
@@ -141,6 +143,7 @@ nav ul li a:hover {
     align-items: center;
     font-size: 32px;
     padding: 80px;
+    color: white;
 }
 .header{
     text-align: center;
@@ -204,6 +207,7 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-#comtact{
+#contact{
     font-size: 32px;
+    color: white;
 }
